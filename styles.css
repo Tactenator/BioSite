@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
     font-weight: 500; 
-    overflow-y: hidden; 
 }
 
 html, body {
@@ -117,7 +116,10 @@ nav ul a:hover{
 
 .about-portrait {
     width: 33rem; 
+}
 
+.about-portrait img {
+    width: 25rem; 
 }
 
 .about-text {
@@ -142,4 +144,53 @@ nav ul a:hover{
     tab-size: 4;
     text-indent: 2em;
     font-size: 1.15rem; 
+}
+
+/* Hobbies page */
+
+.container h1 {
+    text-align: center;
+    font-size: 5rem; 
+    text-decoration: underline;
+}
+
+.hobby-container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: solid black 1px; 
+    background: #002b80;
+    color: white; 
+}
+
+.hobby-container:nth-child(odd){
+    background: rgb(233, 233, 233);
+    color: black ;
+}
+
+.hobby-image {
+    width: 50%; 
+    height: auto; 
+    padding: 15px; 
+}
+
+.hobby-image img {
+    width: 50rem;
+}
+
+.hobby-text {
+    width: 35%; 
+    height: auto; 
+    padding: 15px; 
+}
+
+.hobby-text h2 {
+    text-decoration: underline;
+    font-size: 5rem;
+    padding: 5px; 
+}
+
+.hobby-text p {
+    font-size: 1.2rem; 
+    text-indent: 2em;
 }
